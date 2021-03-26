@@ -1,5 +1,4 @@
 // Це бібліотека для графіків в Dashboard
-// Її ти не повинен знати
 
 /* eslint-disable no-underscore-dangle */
 import { Chart } from 'react-chartjs-2';
