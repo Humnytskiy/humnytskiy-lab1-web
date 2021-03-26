@@ -1,0 +1,45 @@
+// BLOCK
+.Nav-item{
+    display: 'flex';
+    padding-top: 0;
+    padding-bottom: 0;
+    // ELEMENT
+    &__title{
+       margin-right: auto;
+    }
+    // ELEMENT
+    &__icon{
+        margin-right: $theme-spacing_1;
+    }
+    // ELEMENT
+    &__btn{
+        color: $text-seconady-color;
+        font-weight: $font-weight-medium;
+        justify-content: flex-start;
+        letter-spacing: 0;
+        padding: 10px 8px;
+        text-transform: none;
+        width: 100%;
+    }
+
+    // MODIFICATOR
+    &--able{
+
+    }
+
+    // MODIFICATOR
+    &--disable{
+        color: $disable-nav-color;
+        .Nav-item{
+            &__title{
+                color: $disable-nav-color;
+            }
+        }
+    }
+
+    // SPECIFICATOR
+    // Задаєм специфікатору класу нав елементу відступ зверху (нижній елемент)
+    &_error{
+        margin-top: 20px;
+    }
+}
